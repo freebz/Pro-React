@@ -1,4 +1,4 @@
-// 예제 3-4. Checklist 컴포넌트의 propTypes
+// 예제 3-20. 모든 태스크 콜백을 호출할 수 있는 CheckList 컴포넌트
 
 import React, { Component, PropTypes } from 'react';
 
