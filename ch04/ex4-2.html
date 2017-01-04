@@ -1,0 +1,49 @@
+<!-- 예제 4-2. CSS 클래스를 동적으로 추가해 CSS 트랜지션을 트리거하는 방법 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hacked together sidebar Transition</title>
+    <style media="screen">
+      /* 사이드에도 항목 리스트가 포함되므로 여기에도 스타일을 적용한다. */
+      ul {
+          list-style-type: none;
+          padding: 0;
+      }
+      li {
+          padding: 15px;
+          border-bottom: solid 1px #eee;
+          background-color: #ddd;
+      }
+      .sidebar{
+          background-color:#eee;
+          box-shadow: 1px 0 3px #888888;
+          position:absolute;
+          width: 15rem;
+          height: 100%
+      }
+      .sidebar-transition{
+          opacity: 0;
+          left: -15rem;
+      }
+      .sidebar-transition-active{
+          opacity: 1;
+          left: 0;
+          transition: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <button onclick="
+          document.querySelector('.sidebar').classList.add('sidebar-transition-active');
+	  "> &#9776; </button>
+      <!-- &#9776;은 햄버거 utf-8 기호("햄버거 메뉴")에 해당하는 HTML 엔티티다. -->
+      <div class='sidebar sidebar-transition'>
+	<ul>
+	  ...
+	</ul>
+      </div>
+  </body>
+</html>
