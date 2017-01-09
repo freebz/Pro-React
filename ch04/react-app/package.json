@@ -13,10 +13,5 @@
     "webpack-dev-server": "^1.10.*"
   },
   "dependencies": {
-    "babel-polyfill": "^6.20.0",
-    "react": "^0.13.*",
-    "react-addons-css-transition-group": "^15.4.1",
-    "react-addons-update": "^15.4.1",
-    "whatwg-fetch": "^2.0.1"
   }
 }
