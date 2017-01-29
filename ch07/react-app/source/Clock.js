@@ -9,7 +9,8 @@ class Clock extends Component {
       <div>
         <Digit value={this.props.hours} />{' : '}
         <Digit value={this.props.minutes} />{' : '}
-        <Digit value={this.props.seconds} />
+        <Digit value={this.props.seconds} />{' . '}
+        <Digit value={this.props.tenths} />
       </div>
     );
   }
