@@ -1,0 +1,30 @@
+// 예제 9-4. babel-jest와 테스트 리액트 애플리케이션을 이용하는 테스트 작업을 포함하는 package.json 파일
+
+{
+  "name": "testing-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^5.3.0",
+    "jest-cli": "^0.6.1",
+    "react": "^0.14.1",
+    "react-addons-test-utils": "^0.14.1",
+    "react-dom": "^0.14.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node-modules/react-dom",
+      "<rootDir>/node-modules/react-addons-test-utils",
+      "<rootDir>/node-modules/fbjs"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+// 예제 9-1. babel-jest를 이용하는 테스트 작업을 포함하는 package.json 파일
+
+{
+  "name": "testsample",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^5.3.0",
+    "jest-cli": "^0.6.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest"
+  }
+}
