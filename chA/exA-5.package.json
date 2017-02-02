@@ -1,0 +1,16 @@
+// 예제 A-5. start 스크립트가 추가된 package.json 파일
+
+{
+  "name": "webpack-sample-project",
+  "version": "1.0.0",
+  "description": "Sample wabpack project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack"
+  },
+  "author": "C ssio Zen",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.12.9"
+  }
+}

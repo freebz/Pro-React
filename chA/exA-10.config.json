@@ -1,0 +1,5 @@
+// 예제 A-10. Config.json 파일
+
+{
+    "greetText": "Hi there and greetings from JSON!"
+}

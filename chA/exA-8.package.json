@@ -1,0 +1,16 @@
+// 예제 A-8. package.json에서 업데이트된 스크립트 'start' 태스크
+
+{
+  "name": "webpack-sample-project",
+  "version": "1.0.0",
+  "description": "Sample wabpack project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --progress"
+  },
+  "author": "C ssio Zen",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.12.9"
+  }
+}

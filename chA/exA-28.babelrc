@@ -1,0 +1,19 @@
+// 예제 A-28. 업데이트된 .babelrc 구성
+
+{
+  "presets": ["react", "es2015"],
+  "env": {
+    "development": {
+      "plugins": [["react-transform", {
+	"transforms": [{
+	  "transform": "react-transform-hmr",
+	  // 리액트 네이트브를 이용할 때는 "react-native"를 대신 전달한다.
+	  "imports": ["react"],
+	  // 웹팩 HMR에 중요한 부분
+	  "locals": ["module"]
+	}]
+	// 참고: 이 밖에도 더 많은 변환을 배열에 추가할 수 있다.
+      }]]
+    }
+  }
+}
